@@ -1,10 +1,10 @@
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
+import { SafeAreaView, View } from 'react-native'
 import React, { useState } from 'react'
 import Title from '../../components/Title'
 
 const Home = () => {
     const [title, setTitle] = useState('My first component');
-    
+
   return (
     <SafeAreaView>
         <View>
@@ -14,6 +14,4 @@ const Home = () => {
   )
 }
 
-export default Home
-
-const styles = StyleSheet.create({})
+export default React.memo(Home)
